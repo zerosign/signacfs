@@ -9,3 +9,6 @@ This filesystem use access control + signature based to check whether incoming r
 access to the filesystem so that we could potentially secure an access to specific files by specifying
 certain policies to access control. At first it will check whether application signature (*.crt, *.ca.crt)
 are valid or not then check the checksum of the signature valid or not.
+
+TODO: This crate hopefully will support either [pki based signature](https://github.com/briansmith/webpki)
+or [gpg based signature](https://gitlab.com/sequoia-pgp/sequoia)
