@@ -1,6 +1,6 @@
-# signacfs
+== signacfs
 
-Signature &amp; access control based overlay filesystem (supports for fuse, docker &amp; hopefully kubernetes using CRI)
+Signature access control based overlay filesystem (supports for fuse, docker hopefully kubernetes using CRI)
 This fuse filesystem being implemented since LSM like SELinux still aren't being supported in
 namespace based system (container based).
 
@@ -10,5 +10,5 @@ access to the filesystem so that we could potentially secure an access to specif
 certain policies to access control. At first it will check whether application signature (*.crt, *.ca.crt)
 are valid or not then check the checksum of the signature valid or not.
 
-TODO: This crate hopefully will support either [pki based signature](https://github.com/briansmith/webpki)
-or [gpg based signature](https://gitlab.com/sequoia-pgp/sequoia)
+TODO: This crate hopefully will support either https://github.com/briansmith/webpki[PKI Based Signature]
+or https://gitlab.com/sequoia-pgp/sequoia[GPG Based Signature]
